@@ -1,490 +1,912 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Independent Marketing</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn how to prepare for FDA Inspection of Medical Device Quality Management Systems (QMS). Understand the differences between FDA audits, ISO certification audits, and surveillance audits.">
+    <meta name="keywords"
+        content="FDA inspection, medical device QMS, FDA audit, ISO certification audit, surveillance audit">
+    <meta name="author" content="Moazam ALi Syed ">
+    <title>Preparing for FDA Inspection of Medical Device QMS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .headernav {
+            background-color: #e6e6e6ec;
+            height: 40px;
+        }
+        .icones {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+        }
+        .hero-section {
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .bg-primary {
+            background-color: #26639e !important;
+        }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 1;
+        }
+        .content h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            width: auto;
+        }
+        .content button {
+            padding: 10px 20px;
+            background-color: transparent;
+            color: white;
+            border: solid;
+            border-radius: 1.6875rem;
+            cursor: pointer;
+        }
+        h2 {
+            color: #26639e;
+        }
+        h1 {
+            width: auto;
+        }
+        .badge {
+            background-color: #e6e6e6ec;
+            color: #5f5f5f;
+        }
+        .back {
+            background-color: #e6e6e6ec;
+            padding: 20px;
+            justify-content: center;
+        }
+        .bg-dark-blue {
+            background-color: #012240;
+        }
+        .footer {
+            background-color: #21272c;
+            color: white;
+            text-align: center;
+        }
+        .fixed-lower-div {
+            position: fixed;
+            top: -3%;
+            right: 0%;
+            width: 100%;
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .dropdown1 {
+            position: relative;
+            border-radius: 20px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+        }
+        .dropdown-content a:hover {
+            background-color: skyblue;
+        }
+        .h5 {
+            color: #5f5f5f;
+        }
+        .mega-menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #fff;
+    width: 90%;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+}
+.maga:hover .mega-menu {
+    display: block;
+}
+.mega-menu .col-md-3 {
+    padding-right: 20px;
+}
+    </style>
+    <script>
+        window.addEventListener('scroll', function() {
+            var lowerDiv = document.querySelector('.lower-div');
+            var upperDiv = document.querySelector('.upper-div');
+            var lowerDivRect = lowerDiv.getBoundingClientRect();
+            var upperDivRect = upperDiv.getBoundingClientRect();
+            if (window.scrollY === 0) {
+                upperDiv.classList.remove('fixed-upper-div');
+                lowerDiv.classList.remove('fixed-lower-div');
+                lowerDiv.style.paddingTop = 0;
+            } else if (lowerDivRect.top <= 0) {
+                upperDiv.classList.add('fixed-upper-div');
+                lowerDiv.classList.add('fixed-lower-div');
+                lowerDiv.style.paddingTop = upperDiv.clientHeight + 'px';
+            } else {
+                upperDiv.classList.remove('fixed-upper-div');
+                lowerDiv.classList.remove('fixed-lower-div');
+                lowerDiv.style.paddingTop = 0;
+            }
+        });
+    </script>
 </head>
 <body>
-    <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        <!-- Spinner End -->
-        <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <img src="img/Logo.png" alt="Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="project.html" class="nav-item nav-link">Project</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+    <div>
+        <div class="container-fluid headernav upper-div">
+            <div class="d-flex ">
+                <div class="position-absolute ms-4 d-flex">
+                    <div class="icones">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#5f5f5f"
+                            class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                        </svg> clint Login
                     </div>
-                   </div>
-            </nav>
-            <div class="container-xxl py-5  hero-header mb-5" style="background-color:rgb(24, 138, 24);">
-                <div class="container my-5 py-5 px-lg-5">
-                    <div class="row g-5 py-5">
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="text-white mb-4 animated zoomIn">Your All-in-One Digital Marketing Solution</h1>
-                            <p class="text-white pb-3 animated zoomIn">Unlock the potential for rapid business growth with our comprehensive SEO tool. Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem</p>
-                            <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
-                        </div>
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <img class="img-fluid" src="img/hero.png" alt="">
-                        </div>
+                    <div class="icones">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#5f5f5f"
+                            class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                        </svg> Call
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Navbar & Hero End -->
-        <!-- Full Screen Search End -->
-        <!-- About Start -->
-        <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative  ps-4">About Us</h6>
-                            <h2 class="mt-2">Unleash Success with Our 10 Years of Digital Marketing Expertise</h2>
-                        </div>
-                        <p class="mb-4">Empower your online journey with our unparalleled digital marketing solutions. With a decade of experience, we specialize in delivering impactful results. Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <h6 class="mb-3 "><i class="fa fa-check tick me-2"></i>Results-driven Tactics</h6>
-                                <h6 class="mb-0 "><i class="fa fa-check tick me-2"></i>Professional Staff</h6>
-                            </div>
-                            <div class="col-sm-6">
-                                <h6 class="mb-3 "><i class="fa fa-check tick me-2"></i>24/7 Support</h6>
-                                <h6 class="mb-0 "><i class="fa fa-check tick  me-2"></i>Fair Prices</h6>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mt-4">
-                            <a class="btn btn1 rounded-pill px-4 me-3" href="">Read More</a>
-                            <a class="btn btn1 btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn1 btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn1 btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn1 btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+                <div class="position-absolute top-0 end-0 d-flex">
+                    <div class="icones">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f5f5f"
+                            class="bi bi-wordpress" viewBox="0 0 16 16">
+                            <path
+                                d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218q.03 0 .058.003l.031.003A6.84 6.84 0 0 0 8 1.137 6.86 6.86 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.86 6.86 0 0 0 3.868 6.176L1.73 5.206A6.8 6.8 0 0 0 1.137 8" />
+                            <path
+                                d="M6.061 14.583 8.121 8.6l2.109 5.78q.02.05.049.094a6.85 6.85 0 0 1-4.218.109m7.96-9.876q.046.328.047.706c0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8c0-4.411 3.589-8 8-8s8 3.589 8 8-3.59 8-8 8-8-3.589-8-8m.367 0c0 4.209 3.424 7.633 7.633 7.633S15.632 12.209 15.632 8C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8" />
+                        </svg>
                     </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg">
+                    <div class="icones">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f5f5f"
+                            class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path
+                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                        </svg>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-        <!-- Newsletter End -->
-        <!-- Service Start -->
-        <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline  ps-4">Our Services</h6>
-                    <h2 class="mt-2">What Solutions We Provide</h2>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">SEO Optimization</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                        </div>
+                    <div class="icones"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="#5f5f5f" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Web Design</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                        </div>
+                    <div class="icones">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f5f5f"
+                            class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                        </svg>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Social Media Marketing</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Email Marketing</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">PPC Advertising</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">App Development</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Service End -->
-        <!-- Portfolio Start -->
-        <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline ps-4">Our Projects</h6>
-                    <h2 class="mt-2">Recently Launched Projects</h2>
-                </div>
-                <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="col-12 text-center">
-                        <ul class="list-inline mb-5" id="portfolio-flters">
-                            <li class="btn px-3 pe-4 active" data-filter="*">All</li>
-                            <li class="btn px-3 pe-4" data-filter=".first">Design</li>
-                            <li class="btn px-3 pe-4" data-filter=".second">Development</li>
+                    <div class="dropdown icones pt-0">
+                        <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f5f5f"
+                                class="bi bi-globe" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Urdu</a></li>
+                            <li><a class="dropdown-item" href="#">Arabic</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="row g-4 portfolio-container">
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.3s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.6s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.1s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-4.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.3s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.6s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                                </div>
+            </div>
+        </div>
+        <div class="ms-5 mt-2 mb-3 scrolling-div lower-div">
+            <div class="d-flex align-items-center">
+                <div class="col-6 col-md-2">
+                    <img src="img/proqc-international-home.webp" alt="logo" class="logo" width="140"
+                        height="50">
+                </div>
+                <div class="col-6 col-md-10">
+                    <div class="navbar navbar-expand-md " style="padding-left: 115px;">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Blogs
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="maga">
+                                        <a class="nav-link" href="#">MAGA</a>
+                                        <div class="mega-menu">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <h6>Industries</h6>
+                                                    <hr>
+                                                    <ul class="list-unstyled">
+                                                        <li><p>Sublist item 1</p></li>
+                                                        <li><p>Sublist item 2</p></li>
+                                                        <li><p>Sublist item 3</p></li>
+                                                        <li>Pro QC has over 40 years experience in quality control and quality assurance across virtually every industry.</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <h6>Hardlines</h6>
+                                                    <hr>
+                                                    <ul class="list-unstyled">
+                                                        <li><p>Softlines (Garments, Apparel, Footwear)</p></li>
+                                                        <li><p>Bags and Luggage</p></li>
+                                                        <li><p>Footwear</p></li>
+                                                        <li><p>Textile</p></li>
+                                                        <li><p>Medical  Medical</p></li>
+                                                        <li>
+                                                            <h6>  Softlines</h6>
+                                                            <hr>
+                                                            <ul class="list-unstyled">
+                                                                <li><p>Sublist item 1</p></li>
+                                                                <li><p>Sublist item 2</p></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <h6> Industrial Solutions</h6>
+                                                    <hr>
+                                                    <ul class="list-unstyled">
+                                                        <li><p>Eyewear
+                                                        </p></li>
+                                                        <li><p>Footwear</p></li>
+                                                        <li><p>Medical  Medical</p></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <h6>Industries</h6>
+                                                    <hr>
+                                                    <ul class="list-unstyled">
+                                                        <li><p>Medical  Medical</p></li>
+                                                        <li><p>experience </p></li>
+                                                        <li><p>Softlines (Garments, Apparel, Footwear)</p></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Features</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Pricing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio End -->
-        <!-- Testimonial Start -->
-        <div class="container-xxl bg-primary testimonial py-5 my-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
-        <!-- Team Start -->
-        <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline text-primary ps-4">Our Team</h6>
-                    <h2 class="mt-2">Meet Our Team Members</h2>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
-                            </div>
-                            <div class="px-4 py-3">
-                                <h5 class="fw-bold m-0">Ali</h5>
-                                <small>CEO</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-100" src="img/team-2.jpg" alt="">
-                            </div>
-                            <div class="px-4 py-3">
-                                <h5 class="fw-bold m-0">Syed Rizwan</h5>
-                                <small>Manager</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-100" src="img/team-3.jpg" alt="" width="400">
-                            </div>
-                            <div class="px-4 py-3">
-                                <h5 class="fw-bold m-0">Noah Michael</h5>
-                                <small>Designer</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Team End -->
-        <!-- Footer Start -->
-        <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Get In Touch</h5>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Popular Link</h5>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
-                        <a class="btn btn-link" href="">Career</a>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Project Gallery</h5>
-                        <div class="row g-2">
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Newsletter</h5>
-                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container px-lg-5">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg  btn-lg-square back-to-top pt-2" style="background-color: green; color: white;"><i class="bi bi-arrow-up"></i></a>
     </div>
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <div class="hero-section">
+        <div class="image-container">
+            <img src="img/herosectionbg.webp" alt="logo" class="logo" width="100%" height="400">
+            <div class="overlay"></div>
+            <div class="content">
+                <p>JUNE 15, 2023 | FACTORY AUDITS / MEDICAL DEVICES</p>
+                <h1>HOW TO PREPARE FOR AN FDA INSPECTION OF YOUR MEDICAL DEVICE QMS</h1>
+                <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="white"
+                        class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                    </svg> CONTACT US</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-xs-12 col-lg-9 pt-5">
+                <div class="ps-3">
+                    <div class="mt-2">
+                        <p class="lead text-justify">An FDA inspection of a medical device company’s quality
+                            management
+                            system (QMS) can be a daunting experience. However, with proper preparation and
+                            attention to
+                            detail, you can ensure that your company is ready for the inspection. In this article,
+                            we
+                            will
+                            provide you with tips and best practices for preparing for an FDA audit of your medical
+                            device
+                            company’s QMS.</p>
+                        <h2 class="mt-5">What is an FDA inspection?</h2>
+                        <p class="text-justify">An FDA inspection of a medical device company’s quality management
+                            system
+                            is an assessment of the company’s compliance with the Quality System Regulation and
+                            related
+                            regulations. The inspectional process is known as the "<a
+                                href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/inspection-guides/quality-systems"
+                                rel="noopener noreferrer nofollow noindex">Quality System Inspection Technique</a>"
+                            or
+                            "QSIT". The FDA executes four types of inspections, but for class I and II medical
+                            devices,
+                            it
+                            carries out routine inspections every two years using QSIT. The QSIT is an aid to teach
+                            inspectors how to inspect a medical device company so that they demonstrate compliance
+                            with
+                            Part
+                            820 regulations.</p>
+                        <p class="text-justify">During the inspection, the FDA will review the company’s QMS
+                            documents
+                            and
+                            records. The FDA will also conduct interviews with employees to assess their knowledge
+                            of
+                            the
+                            QMS and their roles in maintaining it. The FDA will then issue a Form 483 if it finds
+                            any
+                            deviations from the regulations. The company must respond to the Form 483 within 15
+                            business
+                            days with a corrective action plan.</p>
+                        <h2 class="mt-5">How is an FDA audit different from an ISO certification audit or a
+                            surveillance
+                            audit?</h2>
+                        <p class="text-justify">The FDA conducts an inspection of a medical device company’s
+                            quality
+                            management system (QMS), whereas ISO conducts an audit. (Although these terms are used
+                            differently in industry in different contexts, this article will use
+                            inspector/auditor/investigator and inspection/audit interchangeably.) The two are
+                            planned
+                            and
+                            conducted differently, and their inspectors have different levels of authority. The FDA
+                            inspection is a regulatory requirement for medical device companies in the United
+                            States.
+                            The
+                            FDA inspection is conducted by an FDA investigator who has the authority to issue a Form
+                            483
+                            if
+                            deviations from regulations are found. To comply with the law, the company must respond
+                            to
+                            the
+                            Form 483 within 15 business days with a corrective action plan.</p>
+                        <p class="text-justify">ISO certification, on the other hand, is comparatively less
+                            intensive
+                            in
+                            nature and conducted in two stages. An ISO certification is valid for three years during
+                            which
+                            the auditor checks if everything is functioning as it should. These checks are
+                            surveillance
+                            audits. A surveillance audit is less intensive than the certification audit and is a
+                            "snapshot"
+                            in time of the auditor’s review to ensure the company is still meeting the key elements
+                            of
+                            the
+                            ISO standard.</p>
+                        <h2 class="mt-5">Types of FDA inspections for Medical Device QMS</h2>
+                        <p class="text-justify">The FDA conducts four types of inspections for medical device
+                            companies.
+                            These are:</p>
+                        <ol>
+                            <li><strong>Pre-approval inspections</strong>: These inspections are conducted before
+                                the
+                                FDA
+                                approves a new medical device. The purpose of these inspections is to ensure that
+                                the
+                                manufacturer has established and implemented a QMS that meets the requirements of
+                                the
+                                Quality System Regulation.</li>
+                            <li><strong>Routine inspections</strong>: These inspections are conducted every two
+                                years
+                                for
+                                class I and II medical devices. The purpose of these inspections is to ensure that
+                                the
+                                manufacturer is maintaining a QMS that meets the requirements of the Quality System
+                                Regulation.</li>
+                            <li><strong>Compliance follow-up inspections</strong>: These inspections are conducted
+                                to
+                                ensure
+                                that the manufacturer has corrected any deficiencies identified during a previous
+                                inspection.</li>
+                            <li><strong>For-cause inspections</strong>: These inspections are conducted when the FDA
+                                has
+                                reason to believe that a manufacturer is not in compliance with the Quality System
+                                Regulation.</li>
+                        </ol>
+                        <p class="text-justify">During each inspection, the FDA will review the company’s QMS
+                            documentation
+                            and records. The FDA will also conduct interviews with employees to assess their
+                            knowledge
+                            of
+                            the QMS and their roles in maintaining it. The FDA will then issue a Form 483 if it
+                            finds
+                            any
+                            deviations from the regulations. The company must respond to the Form 483 within 15
+                            business
+                            days with a corrective action plan.</p>
+                        <h2 class="mt-5">Four essential areas of FDA inspection readiness</h2>
+                        <ol>
+                            <li><strong>Have a good QMS in place</strong></li>
+                        </ol>
+                        <p class="text-justify">Having a good QMS in place is important for an FDA inspection
+                            because
+                            it
+                            ensures that the medical device company is meeting the requirements of the Quality
+                            System
+                            Regulation. A good QMS can help the company avoid Form 483 observations and warning
+                            letters
+                            from
+                            the FDA. A good QMS can also help the company improve its product quality and reduce
+                            costs.<br>
+                            To establish a good QMS, the company should follow these steps:</p>
+                        <ul>
+                            <li>Establish a quality policy and objectives.</li>
+                            <li>Identify the processes needed for the QMS and their application throughout the
+                                organization.
+                            </li>
+                            <li>Determine the sequence and interaction of these processes.</li>
+                            <li>Establish criteria and methods needed to ensure that both the operation and control
+                                of
+                                these
+                                processes are effective.</li>
+                            <li>Ensure the availability of resources and information necessary to support the
+                                operation
+                                and
+                                monitoring of these processes.</li>
+                            <li>Monitor, measure, and analyze these processes.</li>
+                            <li>Implement actions necessary to achieve planned results and continual improvement of
+                                these
+                                processes.</li>
+                        </ul>
+                        <ol start="2">
+                            <li><strong>Do regular, robust internal auditing</strong></li>
+                        </ol>
+                        <p class="text-justify">Regular and robust internal auditing is important for an FDA
+                            inspection
+                            of
+                            a medical device company’s QMS because it helps the company identify and correct
+                            deficiencies
+                            before the FDA inspection. Internal auditing also helps the company ensure that its QMS
+                            is
+                            effective and efficient. A good internal auditing system can help the company avoid Form
+                            483
+                            observations and warning letters from the FDA.</p>
+                        <p class="text-justify">To establish a good internal auditing system, the company should
+                            follow
+                            these concisely stated steps:<br>
+                            Establish an internal audit program, identify the processes to be audited, determine the
+                            frequency of audits, establish audit criteria, select auditors, conduct audits, report
+                            audit
+                            results, implement corrective actions, and follow up on corrective actions.</p>
+                        <ol start="3">
+                            <li><strong>Structure documents and records in a way that is usable and
+                                    accessible</strong>
+                            </li>
+                        </ol>
+                        <p class="text-justify">Structuring documents and records in a way that is usable and
+                            accessible is
+                            important for an FDA inspection of a medical device company’s QMS because it helps the
+                            FDA
+                            investigator quickly find the information they need. A well-organized QMS can help the
+                            company
+                            avoid Form 483 observations and warning letters from the FDA.</p>
+                        <p class="text-justify">To structure documents and records in a way that is usable and
+                            accessible,
+                            the company should establish a document control procedure. This procedure should
+                            identify
+                            the
+                            documents and records needed for the QMS, and establish:</p>
+                        <ul>
+                            <li>Document and record formats</li>
+                            <li>Document and record numbering systems</li>
+                            <li>Document and record retention periods</li>
+                            <li>Document and record storage locations</li>
+                            <li>Document and record retrieval procedures</li>
+                            <li>Document and record revision procedures</li>
+                            <li>Train employees on the document control procedure</li>
+                        </ul>
+                        <h2 class="mt-5">Take note of three FDA forms used for inspections</h2>
+                        <p class="text-justify">Familiarize yourself and your staff with the three forms typically
+                            used
+                            in
+                            FDA inspections of a medical device QMS:</p>
+                        <ul>
+                            <li><strong>Form 482</strong> is used by FDA investigators to request records from a
+                                medical
+                                device company during an inspection. The form is used to document the request and
+                                the
+                                company’s response. </li>
+                            <li><strong>Form 483</strong> is used by FDA investigators to document observations made
+                                during
+                                an inspection that could lead to a regulatory action against the company. The form
+                                is
+                                issued
+                                at the conclusion of the inspection and lists the observations made by the
+                                investigator.
+                                A
+                                “clean” inspection is one that finishes without a Form 483 being issued. Minor
+                                findings
+                                or
+                                observations may be documented in other ways, including the audit report, with no
+                                Form
+                                483
+                                being issued.</li>
+                            <li><strong>Form 484</strong> is used by FDA investigators to document samples taken
+                                during
+                                an
+                                inspection. The form is used to document the sample taken, the location of the
+                                sample,
+                                and
+                                the analysis performed on the sample.</li>
+                        </ul>
+                        <p class="text-justify">These forms are important because they help ensure that medical
+                            device
+                            companies comply with FDA regulations. Companies that receive Form 483 observations
+                            should
+                            respond promptly and thoroughly to address the observations. Failure to respond
+                            adequately
+                            could
+                            result in further regulatory action against the company.</p>
+                        <h2 class="mt-5">10 additional tips</h2>
+                        <ul>
+                            <li>Make sure your QMS is in place, and you follow it.</li>
+                            <li>Use internal audits.</li>
+                            <li>ISO 13485 certification is good but does not demonstrate meeting the regulations.
+                            </li>
+                            <li>Prepare your team.</li>
+                            <li>Be ready to perform once the inspector arrives.</li>
+                            <li>Master back-room operations and organization. (e.g. How to get the requested forms
+                                to
+                                the
+                                inspector promptly and accurately)</li>
+                            <li>Review FDA guidelines, including the “<a
+                                    href="https://www.fda.gov/files/Guide-to-Inspections-of-Quality-Systems.pdf"
+                                    rel="noopener noreferrer nofollow noindex">QSIT</a>” guide from 1999. Use other
+                                resources such as articles, podcasts, etc. Be aware of what are official
+                                requirements on
+                                the
+                                one hand, and informal resources from industry and standards bodies, on the other.
+                            </li>
+                            <li>Schedule the day tightly and have contacts and personnel in place.</li>
+                            <li>Don’t give the inspector free access to root through an archive. Instead, hand them
+                                an
+                                index
+                                to a database from which they can request records.</li>
+                            <li>Relax as best you can, be professional and welcoming, arrange coffee, lunch, and
+                                breaks,
+                                and
+                                confidently show the solid QMS components you’ve worked so hard to establish!</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="mt-5 px-5 ps-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <p class="mb-0">FDA, MEDICAL DEVICE</p>
+                        </div>
+                        <div class="col d-flex justify-content-end">
+                            <div class="pe-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f5f5f"
+                                    class="bi bi-wordpress" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218q.03 0 .058.003l.031.003A6.84 6.84 0 0 0 8 1.137 6.86 6.86 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.86 6.86 0 0 0 3.868 6.176L1.73 5.206A6.8 6.8 0 0 0 1.137 8" />
+                                    <path
+                                        d="M6.061 14.583 8.121 8.6l2.109 5.78q.02.05.049.094a6.85 6.85 0 0 1-4.218.109m7.96-9.876q.046.328.047.706c0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z" />
+                                    <path fill-rule="evenodd"
+                                        d="M0 8c0-4.411 3.589-8 8-8s8 3.589 8 8-3.59 8-8 8-8-3.589-8-8m.367 0c0 4.209 3.424 7.633 7.633 7.633S15.632 12.209 15.632 8C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8" />
+                                </svg>
+                            </div>
+                            <div class="pe-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f5f5f"
+                                    class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                                </svg>
+                            </div>
+                            <div class="pe-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f5f5f"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                </svg>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f5f5f"
+                                    class="bi bi-twitter" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                                </svg>
+                            </div>
+                            <div class="ps-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f5f5f"
+                                    class="bi bi-globe" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mb-5 px-5 ps-5">
+                <p class="lead font-weight-500 text-center">You May Also Like</p>
+                <hr>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 text-center">
+                            <div class="grid-item p-4">
+                                <img src="img/portfolio-3.webp" alt="Supplier Audits: Everything You Need to Know"
+                                    class="logo img-fluid mx-auto" width="230" height="170">
+                                <p>Supplier Audits:<br> Everything You Need to Know</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="grid-item p-4">
+                                <img src="img/portfolio-4.webp" alt="Supplier Audits: Everything You Need to Know"
+                                    class="logo img-fluid mx-auto" width="230" height="170">
+                                <p>Supplier Audits:<br> Everything You Need to Know</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="grid-item p-4">
+                                <img src="img/portfolio-5.webp" alt="Supplier Audits: Everything You Need to Know"
+                                    class="logo img-fluid mx-auto" width="230" height="170">
+                                <p>Supplier Audits:<br> Everything You Need to Know</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-12 col-lg-3 pt-5">
+                <div class="text-center">
+                    <div class="text-center">
+                        <a href="#"><img data-lazyloaded="1" src="img/Contectus.webp"
+                                class="img-fluid mb-5 entered litespeed-loaded" width="300px" height="600px"
+                                alt="Learn more about our services" data-ll-status="loaded">
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <h5 class="text-center h5 mt-2">Categories</h5>
+                        <hr>
+                        <div class=" dropdown1 text-center mt-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Select category
+                            </a>
+                            <ul class="dropdown-menu dropdown-content">
+                                <li><a class="dropdown-item" href="#">Automotive</a></li>
+                                <li><a class="dropdown-item" href="#">E-Bike</a></li>
+                                <li><a class="dropdown-item" href="#">Factory Audits</a></li>
+                                <li><a class="dropdown-item" href="#">Automotive</a></li>
+                                <li><a class="dropdown-item" href="#">E-Bike</a></li>
+                                <li><a class="dropdown-item" href="#">Factory Audits</a></li>
+                                <li><a class="dropdown-item" href="#">Automotive</a></li>
+                                <li><a class="dropdown-item" href="#">E-Bike</a></li>
+                                <li><a class="dropdown-item" href="#">Factory Audits</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h5 class="text-center h5 mt-5">Follow Us</h5>
+                        <hr>
+                        <div class="d-flex back mt-4">
+                            <div class="pe-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#26639e"
+                                    class="bi bi-wordpress" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218q.03 0 .058.003l.031.003A6.84 6.84 0 0 0 8 1.137 6.86 6.86 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.86 6.86 0 0 0 3.868 6.176L1.73 5.206A6.8 6.8 0 0 0 1.137 8" />
+                                    <path
+                                        d="M6.061 14.583 8.121 8.6l2.109 5.78q.02.05.049.094a6.85 6.85 0 0 1-4.218.109m7.96-9.876q.046.328.047.706c0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z" />
+                                    <path fill-rule="evenodd"
+                                        d="M0 8c0-4.411 3.589-8 8-8s8 3.589 8 8-3.59 8-8 8-8-3.589-8-8m.367 0c0 4.209 3.424 7.633 7.633 7.633S15.632 12.209 15.632 8C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8" />
+                                </svg>
+                            </div>
+                            <div class="pe-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#26639e"
+                                    class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                                </svg>
+                            </div>
+                            <div class="pe-3"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="#26639e" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                </svg>
+                            </div>
+                            <div class="pe-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#26639e"
+                                    class="bi bi-twitter" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                                </svg>
+                            </div>
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#26639e"
+                                    class="bi bi-globe" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h5 class="text-center h5 mt-5">Tags</h5>
+                        <hr>
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <span class="badge mb-3 me-1">HTML</span>
+                            <span class="badge mb-3 me-1">CSS</span>
+                            <span class="badge mb-3 me-1">JavaScript</span>
+                            <span class="badge mb-3 me-1">Bootstrap</span>
+                            <span class="badge mb-3 me-1">Responsive</span>
+                            <span class="badge mb-3 me-1">Design</span>
+                            <span class="badge mb-3 me-1">HTML</span>
+                            <span class="badge mb-3 me-1">CSS</span>
+                            <span class="badge mb-3 me-1">JavaScript</span>
+                            <span class="badge mb-3 me-1">Bootstrap</span>
+                            <span class="badge mb-3 me-1">Responsive</span>
+                            <span class="badge mb-3 me-1">Design</span>
+                            <span class="badge mb-3 me-1">HTML</span>
+                            <span class="badge mb-3 me-1">CSS</span>
+                            <span class="badge mb-3 me-1">JavaScript</span>
+                            <span class="badge mb-3 me-1">Bootstrap</span>
+                            <span class="badge mb-3 me-1">Responsive</span>
+                            <span class="badge mb-3 me-1">Design</span>
+                            <span class="badge mb-3 me-1">HTML</span>
+                            <span class="badge mb-3 me-1">CSS</span>
+                            <span class="badge mb-3 me-1">JavaScript</span>
+                            <span class="badge mb-3 me-1">Bootstrap</span>
+                            <span class="badge mb-3 me-1">Responsive</span>
+                            <span class="badge mb-3 me-1">Design</span>
+                            <!-- Add more tags as needed -->
+                        </div>
+                    </div>
+                    <h5 class="text-center h5 mt-5">Newsletter</h5>
+                    <hr>
+                    <div class="newsletter-box"
+                        style="background-image:url(img/newsletter-bg.webp);background-size: cover;width: 265px; height: 379px; justify-content: center; align-items: center; margin: auto;">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="mt-4 mb-3"
+                                style="width: 40px; height: 40px; border: 2px solid white; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="white"
+                                    class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="h5 text-white font-weight-900 align-content-center text-center mt-4">Sign Up for
+                            Newsletter
+                        </p>
+                        <p class="text-white text-center mb-2 mt-3">Sign up to receive latest <br> posts and news
+                        </p>
+                        <div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <input type="text" class="form-control form-round mt-4 "
+                                    style="width: 150px; height: 40px;" data-id="Email Address:input" name="email"
+                                    value="" maxlength="80" title="Email Address" placeholder="Email *"
+                                    aria-label="Email" required="" fdprocessedid="1jvn4s">
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center mt-3">
+                                <button class="btn btn-round btn-outline-light btn-gray-shadow btn-block my-2 "
+                                    type="submit" data-enabled="enabled" fdprocessedid="99a72">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section bg-primary mt-5">
+        <div class="container">
+            <div class="w-100 py-4"></div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="text-white text-center mb-3">Want to Get in Touch with Pro QC ?</h3>
+                    <p class="text-center"><a class="btn btn-round btn-outline-light btn-lg btn-gray-shadow my-2"
+                            href="#" role="button"><i class="far fa-envelope" aria-hidden="true"></i>Contact
+                            us</a></p>
+                    <div class="w-100 py-1 mb-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section bg-dark-blue text-white mt-0">
+        <div class="pt-5 pb-2">
+            <div class="container">
+                <div class="row pt-5 pb-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="col-6 col-md-2">
+                            <img src="img/proqc-international-home.webp" alt="logo" class="logo"
+                                width="140" height="50">
+                        </div>
+                        <p class="pt-4">Quality assurance, supplier development and factory consulting services
+                            provided since 1984.
+                            We offer solutions in over 88 countries.</p>
+                    </div>
+                    <div class="col-md-12 col-lg-6 col-xl-6">
+                        <div class="mb-5">
+                            <h3 class="h6 text-white  mb-4">Contact Your Local Office</h3>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 col-sm-12">
+                                    <div class="media-body">
+                                        <strong class="d-block mb-1 text-white font-italic">North America</strong>
+                                        <p class="text-white" id="phone-text-north-america"><i
+                                                class="fas fa-phone mr-2" aria-hidden="true"></i> <a
+                                                class="text-white" href="tel:+12068650595">+1 206 865 0595</a></p>
+                                        <strong class="d-block mb-1 text-white font-italic">North America</strong>
+                                        <p class="text-white" id="phone-text-north-america"><i
+                                                class="fas fa-phone mr-2" aria-hidden="true"></i> <a
+                                                class="text-white" href="tel:+12068650595">+1 206 865 0595</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-sm-12">
+                                    <div class="media-body">
+                                        <strong class="d-block mb-1 text-white font-italic">Europe, Middle East &amp;
+                                            Africa</strong>
+                                        <p class="text-white" id="phone-text-eu"><i class="fas fa-phone mr-2"
+                                                aria-hidden="true"></i><a class="text-white"
+                                                href="tel:0033973036784">+33 9 7303 6784</a></p>
+                                        <strong class="d-block mb-1 text-white font-italic">Europe, Middle East &amp;
+                                            Africa</strong>
+                                        <p class="text-white" id="phone-text-eu"><i class="fas fa-phone mr-2"
+                                                aria-hidden="true"></i><a class="text-white"
+                                                href="tel:0033973036784">+33 9 7303 6784</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer pt-5 pb-5">
+        <h5>Global Coverage experiencia local Local Expertise</h5>
+        <p>© 2023 Pro QC International | Privacy | Terms of use | Terms of service</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
 </body>
 </html>
